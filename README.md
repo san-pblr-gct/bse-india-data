@@ -1,0 +1,1 @@
+Small application to retrieve few data from BSE india website and parse using cheerio and return json array.
