@@ -3,7 +3,7 @@ var cheerio = require('cheerio');
 var express = require('express');
 var http = require('http');
 
-
+var port=process.env.PORT ||5001;
 var app = express();
 var server = http.Server(app);
 
@@ -48,7 +48,7 @@ app.get('/', function (req, res) {
   
 })
 
-server.listen(5001, function () {
+server.listen(port, function () {
     console.log('listening on *: 5001');
 });
 
